@@ -54,7 +54,7 @@ Custom Threat Rules (Extensible)
 
 🔧INSTALLATION AND SETUP
 
-Clone the repository bash Copy Edit git clone https://github.com/yourusername/cybersentinel_ids.git cd cybersentinel_ids
+Clone the repository bash Copy Edit git clone https://github.com/Tauseefmalikk/HAIL-THE-IDS.git cd HAIL-THE-IDS
 
 Create virtual environment & install dependencies bash Copy Edit python -m venv .venv source .venv/bin/activate # or .venv\Scripts\activate on Windows pip install -r requirements.txt
 
