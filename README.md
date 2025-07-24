@@ -18,20 +18,21 @@ HAIL- THE IDS is a real-time Intrusion Detection System designed to detect, log,
 📁 Modular Design: Easily extendable for new rules, logs, and UI components.
 
 
-🚀 How It Works
-Live Traffic Monitoring
+**🚀 How It Works**
+
+1.Live Traffic Monitoring
 Monitors network logs or packet captures in real time.
 
-Rule-Based Detection
+2.Rule-Based Detection
 Custom rules analyze logs for known intrusion patterns (e.g., repeated login attempts, large packet floods, DNS tunneling).
 
-Honeypot Deception
+3.Honeypot Deception
 Logs attacker activity through Cowrie (SSH/Telnet) or Dionaea (SMB, HTTP, FTP) for deeper threat profiling.
 
-LLM Threat Explanation
+4.LLM Threat Explanation
 When a threat is detected, a local LLM (e.g., Mistral) generates a simplified explanation of the threat’s nature, origin, and possible intent.
 
-Interactive UI
+5.Interactive UI
 Streamlit app shows:
 
 📈 Real-time traffic table
@@ -42,7 +43,10 @@ Streamlit app shows:
 
 📊 Traffic and threat visualizations
 
-🧪 Detected Threat Types
+
+
+🧪 DETECTED THREAT TYPES
+
 Port Scan
 
 Brute Force Login
@@ -59,24 +63,27 @@ Unauthorized Access to Honeypots
 
 Custom Threat Rules (Extensible)
 
-🔧 Installation & Setup
+
+🔧INSTALLATION AND SETUP
 1. Clone the repository
 bash
 Copy
 Edit
 git clone https://github.com/yourusername/cybersentinel_ids.git
 cd cybersentinel_ids
-2. Create virtual environment & install dependencies
+
+3. Create virtual environment & install dependencies
 bash
 Copy
 Edit
 python -m venv .venv
 source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 pip install -r requirements.txt
-3. Start Honeypots (Optional)
+
+5. Start Honeypots (Optional)
 Start Cowrie or Dionaea and configure them to log to honeypot_logs/.
 
-4. Start the Streamlit Dashboard
+6. Start the Streamlit Dashboard
 bash
 Copy
 Edit
